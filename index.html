@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+<!-- tailwind css -->
+<link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- stylesheet -->
+ <link rel="stylesheet" href="style.css">
+<!--fontawsome link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  
+</style>
+</head>
+<body>
+
+<header id="nav-top" class="bg-black p-5 h-5 text-white flex gap-20 items-center justify-center lg:text-2xl">
+  <h1>Sign Up and <b>GET 20% OFF</b>  for your first Order </h1>
+  <p id="close">X</p>
+</header> 
+
+  <!-- responsive navbar -->
+<nav id="navbar" class="bg-white-100 p-3 flex  items-center justify-between sticky top-0 z-10 shadow-xl">
+  <h1 class="text-2xl"><b>Nostra</b></h1>
+
+  <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+  
+
+  <ul class="flex gap-10 text-gray-600 hidden md:flex">
+    <li><a class="hover:underline hover:text-black" href="#home">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>  
+
+<!-- sidenavbar -->
+ <section id="sideNav" class="bg-black fixed z-20 top-0" style="width: 50%; height: 100vh; left:-50%" >
+  <div class="text-right p-5">
+    <p id="closeNav" class="inline cursor-pointer text-white">X</p>
+  </div>
+  
+  <ul class=" flex flex-col  gap-12 items-center text-gray-600">
+    <li><a class="hover:underline hover:text-black" href="#home">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+ </section>
+
+<!-- slidr image -->
+ <section class="slider">
+
+  <div class="slider-left-button">
+      <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+  </div>
+
+  <div class="slider-content">
+      <h1>Level up your style with our</h1>
+      <h4>Summer Collections</h4> 
+      <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+  </div>
+
+  <div class="slider-image-container" style="margin-left: 0px;">
+      <img class="slider-image" src="./img/slideimg/slider-one.jpg" width="100%" alt="">
+      <img class="slider-image" src="./img/slideimg/slider-one.jpg" alt="">
+      <img class="slider-image" src="./img/slideimg/slider-one.jpg" alt="">
+  </div>
+
+  <div class="slider-right-button">
+      
+      <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+  </div>
+</section>
+
+<!-- brandsection -->
+ <h1 class="text-2xl text-black mt-10 mb-5"><b>Brands</b></h1>
+<section class="brand">
+  <div class="brand-sec">
+    <img src="./img/brand/brand1.png" alt="">
+    <p>Puma</p>
+  </div>
+  <div class="brand-sec">
+    <img  src="./img/brand/brand2.png" alt="">
+    <p>Addidas</p>
+  </div>
+  <div class="brand-sec">
+    <img src="./img/brand/brand3.png" alt="">
+    <p>Simple</p>
+  </div>
+  <div class="brand-sec">
+    <img src="./img/brand/brand4.png" alt="">
+    <p>leaves</p>
+  </div>
+  <div class="brand-sec">
+    <img src="./img/brand/brand5.png" alt="">
+    <p>Behance</p>
+  </div>
+  <div class="brand-sec">
+    <img src="./img/brand/brand2.png" alt="">
+    <p>Twit</p>
+  </div>
+  <div class="brand-sec">
+    <img src="./img/brand/brand1.png" alt="">
+    <p>Leaves</p>
+  </div>
+  
+
+</section> 
+
+<!-- we section -->
+<section class="flex  items-center justify-between mt-10  p-5">
+<h1 class="text-sm md:text-2xl lg:text-4xl"> <b>We Provide Best<br>Customer Experiences</b></h1>
+<h2 class="text-sm  md:text-xl lg:text-3xl ">|| We ensure that our customer have the best shopping experience</h2>
+</section>
+
+<!-- icon section -->
+<section class="p-5 flex justify-between gap-3">
+  <div class="iconsec">
+    <i class="fa-regular fa-circle-check text-2xl md:text-4xl lg:text-4xl"></i>
+  <p class=" text-xs md:text-sm lg:text-sm mb-2 "> <b>Original Products</b></p>
+  <p class="text-xs md:text-sm  lg:text-sm mb-2 ">Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Porro,.</p>
+  </div>
+  <div class="iconsec">
+    <i class="fa-regular fa-face-smile text-2xl md:text-4xl lg:text-4xl"></i>
+  <p class="text-xs md:text-sm lg:text-sm mb-2"> <b>Satisfiction Gurantee</b></p>
+  <p class="text-xs md:text-sm  lg:text-sm mb-2">Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Porro,.</p>
+  </div>
+  <div class="iconsec">
+    <i class="fa-regular fa-circle-check text-2xl md:text-4xl lg:text-4xl"></i>
+  <p class="text-xs md:text-sm lg:text-sm mb-2"> <b>New arrival every day</b></p>
+  <p class="text-xs md:text-sm  lg:text-sm mb-2">Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Porro,.</p>
+  </div>
+  <div class="iconsec">
+    <i class="fa-solid fa-truck text-2xl md:text-4xl lg:text-4xl "></i>
+  <p class="text-xs md:text-sm lg:text-sm mb-2"> <b>Fast & Free Shipping</b></p>
+  <p class="text-xs md:text-sm  lg:text-sm mb-2">Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Porro,.</p>
+  </div>
+
+</section>
+
+<!-- new arrival -->
+ <section id="newarrival" class="p-7">
+  <h1 class="text-2xl text-black mt-10 mb-5"><b>New Arrivals</b></h1>
+  <div class="newarrival">
+    <div class="overlay-container">
+      <img src="./img/newarrivals/f1.jpg" alt="">
+      <div class="overlay"></div>
+      <button class="new-btn">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+    <div class="overlay-container">
+      <img src="./img/newarrivals/f2.jpg" alt="">
+      <div class="overlay"></div>
+      <button class="new-btn">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+    <div class="overlay-container">
+      <img src="./img/newarrivals/f3.jpg" alt="">
+      <div class="overlay"></div>
+      <button class="new-btn">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+    <div class="overlay-container">
+      <img src="./img/newarrivals/f4.jpg" alt="">
+      <div class="overlay"></div>
+      <button class="new-btn">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+
+  </div>
+
+ </section>
+
+<!-- most wanted -->
+<section id="mostwanted" class="p-7">
+  <h1 class="text-2xl text-black mt-10 mb-5"><b>Most Wanted</b></h1>
+  <div class="most-container">
+    <div class="most">
+      <img src="./img/mostwanted/p1.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src="./img/mostwanted/p2.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src="./img/mostwanted/p3.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src="./img/mostwanted/p4.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src= "./img/mostwanted/p5.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src= "./img/mostwanted/p6.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src="./img/mostwanted/p7.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div>
+     <div class="most">
+      <img src= "./img/mostwanted/p8.jpg" alt="">
+      <button class="sale-btn">Sale</button>
+      <button class="heart-btn">&hearts;</button>
+     </div> 
+  </div>
+</section> 
+
+<!-- offer -->
+<section class="p-5">
+  <div class="offer">
+  <img src="./img/mostwanted/offer.jpg" alt="">
+  <div>
+  <h1 class= "text-sm lg:text-4xl text-white md:text-4xl  "><b>Limitted offer</b></h1>
+  <h3 class="text-sm text-white md:text-3xl lg:text-3xl">35% OFF on this for the first 30 Customers</h3>
+  <button class="offer-button">Shop Now</button>
+ </div>
+  </div>
+
+</section>
+
+<!-- newsletter -->
+ <section>
+<div class="flex flex-col items-center">
+  <h1 class=" md:text-4xl sm:text-lg mt-3"><b>Join Our News Letter</b></h1>
+  <h3 class=" md:text-2xl sm:text-sm mt-3">Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+  <div class="offer-input">
+    <input type="text">
+  </div>
+  <button class="news-btn">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+</div>
+</section>
+
+<!-- footer -->
+ <footer class="footer">
+  <h1 class="text-xl md:text-2xl lg:text-4xl text-white mt-4" ><b>Nostra</b></h1>
+  <h2 class="text-xl md:text-2xl lg:text-3xl text-white mt-4">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h2>
+  <div class="flex gap-8 mt-7 ">
+    <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: white;" ></i>
+    <i class="fa-brands fa-twitter text-2xl md:text-4xl"  style="color: white;"></i>
+    <i class="fa-brands fa-facebook text-2xl md:text-4xl" style="color:  white;"></i>
+  </div>
+  <p class="text-white text-xl md:text-2xl lg:text-2xl mt-7">copy: 2025 Nostra.com</p>
+ </footer>
+
+
+
+
+  
+<script src="index.js"></script>
+</body>
+</html>

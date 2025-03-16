@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+<!-- tailwind css -->
+<link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- stylesheet -->
+ <link rel="stylesheet" href="style.css">
+<!--fontawsome link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  
+</style>
+</head>
+<body>
+
+<header id="nav-top" class="bg-black p-5 h-5 text-white flex gap-20 items-center justify-center lg:text-2xl">
+  <h1>Sign Up and <b>GET 20% OFF</b>  for your first Order </h1>
+  <p id="close">X</p>
+</header> 
+
+  <!-- responsive navbar -->
+<nav id="navbar" class="bg-white-100 p-3 flex  items-center justify-between sticky top-0 z-10 shadow-xl">
+  <h1 class="text-2xl"><b>Nostra</b></h1>
+
+  <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+  
+
+  <ul class="flex gap-10 text-gray-600 hidden md:flex">
+    <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>  
+
+<!-- sidenavbar -->
+ <section id="sideNav" class="bg-black fixed z-20 top-0" style="width: 50%; height: 100vh; left:-50%" >
+  <div class="text-right p-5">
+    <p id="closeNav" class="inline cursor-pointer text-white">X</p>
+  </div>
+  
+  <ul class=" flex flex-col  gap-12 items-center text-gray-600">
+    <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+ </section>
+
+<section>
+ <!-- Main Content -->
+ <div class="container mx-auto p-4 flex flex-col md:flex-row">
+  <!-- Sidebar -->
+  <aside id="checkbox" class="w-1/4 md:w-1/4 bg-white p-4 rounded-lg border-r-2 border-black shadow-md">
+      <h2 class="font-bold text-sm md:text-xl mb-4">Filters</h2>
+      <div class="mb-4">
+          <h3 class="font-semibold">Occasion</h3>
+          <label><input type="checkbox" class="block" value="summer"> Summer</label>
+          <label> <input type="checkbox" class="block"  value="Party"> Party</label>
+          <label class="block"><input type="checkbox"  value="Beach"> Beach</label>
+      </div>
+      <div class="mb-4">
+          <h3 class="font-semibold">Colors</h3>
+          <label><input type="checkbox" class="block" value="Red" checked> Red</label>
+          <label><input type="checkbox" class="block" value="Blue" checked> Blue</label>
+          <label><input type="checkbox" class="block" value="White" checked> White</label>
+          <label><input type="checkbox" class="block" value="Green" checked> Green</label>
+      </div>
+      <div>
+          <h3 class="font-semibold">Arrivals</h3>
+          <label><input  type="checkbox" class="block" value="New" checked> New</label>
+          <label><input type="checkbox" class="block" value="Old" checked> Old</label>
+      </div>
+  </aside>
+
+  <!-- Products Grid -->
+  <main class="w-3/4 md:w-3/4 p-4">
+
+    <div>
+      <input type="text"  id="search" placeholder="Search" class="search-input" >
+    </div>
+    
+      <div id="product-container" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Product Item -->
+          <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="summer">
+              <img src="./img/collection/f1.jpg" class="w-full rounded-md">
+              <h3 class="font-semibold mt-2">Floral Summer Shirt</h3>
+              <p class="text-gray-600">₹220</p>
+          </div>
+          <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="green">
+              <img src="./img/collection/f2.jpg" class="w-full rounded-md">
+              <h3 class="font-semibold mt-2">Summer Green</h3>
+              <p class="text-gray-600">₹290</p>
+          </div>
+          <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="party">
+              <img src="./img/collection/f3.jpg" class="w-full rounded-md">
+              <h3 class="font-semibold mt-2">Party Floral Shirt</h3>
+              <p class="text-gray-600">₹399</p>
+          </div>
+          <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="summer">
+            <img src="./img/collection/f4.jpg" class="w-full rounded-md">
+            <h3 class="font-semibold mt-2">Party Summer Shirt</h3>
+            <p class="text-gray-600">₹399</p>
+        </div>
+        <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="beach">
+          <img src="./img/collection/f5.jpg" class="w-full rounded-md">
+          <h3 class="font-semibold mt-2">Beach</h3>
+          <p class="text-gray-600">₹399</p>
+      </div>
+      <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="party">
+        <img src="./img/collection/f6.jpg" class="w-full rounded-md">
+        <h3 class="font-semibold mt-2">Shirt Party Red</h3>
+        <p class="text-gray-600">₹399</p>
+    </div>
+    <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="party">
+      <img src="./img/collection/f7.jpg" class="w-full rounded-md">
+      <h3 class="font-semibold mt-2">Party Floral Shirt</h3>
+      <p class="text-gray-600">₹399</p>
+  </div>
+  <div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="red">
+    <img src="./img/collection/f8.jpg" class="w-full rounded-md">
+    <h3 class="font-semibold mt-2">Shirt Pary Red</h3>
+    <p class="text-gray-600">₹399</p>
+</div>
+<div id="image-filter" class="bg-white p-2 rounded-lg shadow-md" data-items="summer">
+  <img src="./img/collection/f9.jpg" class="w-full rounded-md">
+  <h3 class="font-semibold mt-2">Floral Summer Shirt</h3>
+  <p class="text-gray-600">₹220</p>
+</div> 
+
+ 
+    </div>
+  </main>
+</div> 
+</section> 
+
+<!-- newsletter -->
+<section>
+  <div class="flex flex-col items-center">
+    <h1 class=" md:text-4xl sm:text-lg mt-3"><b>Join Our News Letter</b></h1>
+    <h3 class=" md:text-2xl sm:text-sm mt-3">Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+    <div class="offer-input">
+      <input type="text">
+    </div>
+    <button class="news-btn">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+  </div>
+  </section>
+  
+  <!-- footer -->
+   <footer class="footer">
+    <h1 class="text-xl md:text-2xl lg:text-4xl text-white mt-4" ><b>Nostra</b></h1>
+    <h2 class="text-xl md:text-2xl lg:text-3xl text-white mt-4">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h2>
+    <div class="flex gap-8 mt-7 ">
+      <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: white;" ></i>
+      <i class="fa-brands fa-twitter text-2xl md:text-4xl"  style="color: white;"></i>
+      <i class="fa-brands fa-facebook text-2xl md:text-4xl" style="color:  white;"></i>
+    </div>
+    <p class="text-white text-xl md:text-2xl lg:text-2xl mt-7">copy: 2025 Nostra.com</p>
+   </footer>
+
+
+
+   
+
+   <script>
+
+    var search = document.getElementById("search")
+    var productContainer = document.getElementById("product-container")
+    var productList = productContainer.querySelectorAll("div")
+    console.log(productList)
+    
+    search.addEventListener("keyup",function(){
+
+      var enteredValue = event.target.value.toUpperCase()
+      
+
+      for(count=0; count<productList.length; count=count+1)
+    {
+      var productname = productList[count].querySelector("h3").textContent
+
+      if(productname.toUpperCase().indexOf(enteredValue)<0)
+    {
+      productList[count].style.display= "none"
+    }
+    else{
+      productList[count].style.display= "block"
+    }
+
+    }
+
+    })
+
+    //check box functioing
+document.addEventListener("DOMContentLoaded" ,function() {
+
+  const checkboxs = document.querySelectorAll(".block")
+  const imageFilter = document.querySelectorAll("#image-filter")
+ 
+  checkboxs.forEach(checkbox => {
+    checkbox.addEventListener("change",filterImages)
+  })
+
+  function filterImages(){
+
+    const checkedValues = Array.from(checkboxs)
+    .filter(checkbox => checkbox.checked)
+    .map(checkbox => checkbox.value)
+
+    imageFilter.forEach(container => {
+     const imageClass = container.classList[1]
+
+     if(checkedValues.includes(imageClass)) {
+      container.style.display = "block"
+     }
+     else{
+      container.style.display = "none"
+     }
+
+
+    })
+
+  }
+  
+
+})
+
+
+
+    
+
+    
+    
+        
+
+
+
+   </script>
+  </body>
+  </html>
+

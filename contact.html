@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+<!-- tailwind css -->
+<link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- stylesheet -->
+ <link rel="stylesheet" href="style.css">
+<!--fontawsome link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  
+</style>
+</head>
+<body>
+
+<header id="nav-top" class="bg-black p-5 h-5 text-white flex gap-20 items-center justify-center lg:text-2xl">
+  <h1>Sign Up and <b>GET 20% OFF</b>  for your first Order </h1>
+  <p id="close">X</p>
+</header> 
+
+  <!-- responsive navbar -->
+<nav id="navbar" class="bg-white-100 p-3 flex  items-center justify-between sticky top-0 z-10 shadow-xl">
+  <h1 class="text-2xl"><b>Nostra</b></h1>
+
+  <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+  
+
+  <ul class="flex gap-10 text-gray-600 hidden md:flex">
+    <li><a class="hover:underline hover:text-black" href="#home">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>  
+
+<!-- sidenavbar -->
+ <section id="sideNav" class="bg-black fixed z-20 top-0" style="width: 50%; height: 100vh; left:-50%" >
+  <div class="text-right p-5">
+    <p id="closeNav" class="inline cursor-pointer text-white">X</p>
+  </div>
+  
+  <ul class=" flex flex-col  gap-12 items-center text-gray-600">
+    <li><a class="hover:underline hover:text-black" href="#home">Home</a></li>
+    <li><a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a></li>
+    <li><a class="hover:underline hover:text-black" href="#mostwanted">Most Wanted</a></li>
+    <li><a class="hover:underline hover:text-black" href="collect.html">Collections</a></li>
+    <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+  </ul>
+ </section>
+
+ <!-- contact -->
+<section>
+  <div class="p-4 mx-auto max-w-xl bg-white">
+    <h1 class="text-2xl text-slate-900 font-semibold text-center">Contact us</h1>
+    <form class="mt-8 space-y-5">
+    <div>
+    <label class='text-sm text-slate-800 font-medium mb-2 block'>Name</label>
+      <input type='text' placeholder='Enter Name'
+        class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border focus:border-slate-900 focus:bg-transparent text-sm outline-none transition-all" />
+      </div>
+      <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Email</label>
+      <input type='email' placeholder='Enter Email'
+        class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border focus:border-slate-900 focus:bg-transparent text-sm outline-none transition-all" />
+      </div>
+      <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Subject</label>
+      <input type='text' placeholder='Enter Subject'
+        class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border focus:border-slate-900 focus:bg-transparent text-sm outline-none transition-all" />
+      </div>
+      <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Message</label>
+      <textarea placeholder='Enter Message' rows="4"
+        class="w-full px-4 text-slate-800 bg-gray-100 border focus:border-slate-900 focus:bg-transparent text-sm pt-3 outline-none transition-all"></textarea>
+      </div>
+      <button type='button'
+        class="!mt-8 text-white bg-slate-900 hover:bg-slate-800 tracking-wide text-[15px] px-4 py-2 w-full outline-none">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- newsletter -->
+<section>
+  <div class="flex flex-col items-center">
+    <h1 class=" md:text-4xl sm:text-lg mt-3"><b>Join Our News Letter</b></h1>
+    <h3 class=" md:text-2xl sm:text-sm mt-3">Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+    <div class="offer-input">
+      <input type="text">
+    </div>
+    <button class="news-btn">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+  </div>
+  </section>
+  
+  <!-- footer -->
+   <footer class="footer">
+    <h1 class="text-xl md:text-2xl lg:text-4xl text-white mt-4" ><b>Nostra</b></h1>
+    <h2 class="text-xl md:text-2xl lg:text-3xl text-white mt-4">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h2>
+    <div class="flex gap-8 mt-7 ">
+      <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: white;" ></i>
+      <i class="fa-brands fa-twitter text-2xl md:text-4xl"  style="color: white;"></i>
+      <i class="fa-brands fa-facebook text-2xl md:text-4xl" style="color:  white;"></i>
+    </div>
+    <p class="text-white text-xl md:text-2xl lg:text-2xl mt-7">copy: 2025 Nostra.com</p>
+   </footer>
+
+  </body>
+  </html>
+
+
